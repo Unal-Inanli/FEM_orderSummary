@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    padding: 1.5rem;
+    margin: 0;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+}
+
+
+
+.card {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 20px 10px hsla(223, 47%, 23%, 0.2);
+
+}
+
+.card-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 3rem;
+}
+
+.card-description {
+    text-align: center;
+    color: hsla(223, 47%, 23%, 0.8);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.card-title {
+    font-weight: 900;
+    margin-bottom: 0.4rem;
+    font-size: 28px;
+}
+
+.order-item {
+    display: flex;
+    width: 100%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 2rem;
+    margin-top: 0.3rem;
+}
+
+.order-item-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.order-item-details span:nth-child(1) {
+    font-weight: 900;
+    margin-bottom: 0.2rem;
+}
+
+
+.order-item-details span:nth-child(2) {
+    color: hsla(223, 47%, 23%, 0.9);
+}
+
+
+.order-item-icon {
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.order-item-icon img {
+    height: 100%;
+}
+
+.order-item-action {
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.order-approve {
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 10px 20px 10px hsla(245, 75%, 52%, 0.3);
+}
+
+.order-cancel {
+    text-decoration: none;
+    color: hsla(223, 47%, 23%, 0.9);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+
+@media (max-width: 400px) {
+
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+
+    .card-content-container {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .order-item {
+        padding: 0.8rem 0.8rem;
+        margin-bottom: 1rem;
+
+
+    }
+
+    .order-item-details span:nth-child(1) {
+
+        font-size: 14px;
+    }
+
+
+    .order-item-details span:nth-child(2) {
+        font-size: 14px;
+
+    }
+
+
+    .order-item-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .order-item-action {
+        font-size: 12px;
+    }
+
+    .order-approve {
+        font-weight: bold;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-image img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
