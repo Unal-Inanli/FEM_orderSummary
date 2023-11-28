@@ -95,6 +95,10 @@ body {
     font-weight: bold;
 }
 
+.order-item-action:hover {
+    text-decoration: none;
+}
+
 
 .order-approve {
     color: white;
@@ -106,15 +110,24 @@ body {
     box-shadow: 0px 10px 20px 10px hsla(245, 75%, 52%, 0.3);
 }
 
+.order-approve:hover {
+    background-color: hsla(245, 75%, 52%, 0.8);
+    cursor: pointer;
+}
+
 .order-cancel {
     text-decoration: none;
-    color: hsla(223, 47%, 23%, 0.9);
+    color: hsla(223, 47%, 23%, 0.8);
     font-weight: bold;
     font-size: 14px;
     padding: 2rem;
     padding-bottom: 2.5rem;
 }
 
+.order-cancel:hover {
+    color: hsla(223, 47%, 23%, 1);
+
+}
 
 @media (max-width: 400px) {
 
